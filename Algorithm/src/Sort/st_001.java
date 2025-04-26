@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class st_001 {
 	/*
-	 * 버블정렬 앞에서부터 인접한 두 원소를 비교해 큰 값이 뒤로 갈 수 있게한다
+	 * 버블정렬: 앞에서부터 인접한 두 원소를 비교해 큰 값이 뒤로 갈 수 있게한다.
 	 */
 	public static void main(String[] args) {
 		int[] arr = { 9, 1, 6, 8, 2 };
