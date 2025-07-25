@@ -2,8 +2,8 @@ package DFS;
 
 public class df_004 {
 
-	public static void main(String[] args) {
-		int[][] maps = {
+	public static void main(String[] args) { //단지 개수 구하기
+		int[][] maps = {  
 			    {1, 1, 0, 0},
 			    {1, 0, 0, 1},
 			    {0, 0, 1, 1},
