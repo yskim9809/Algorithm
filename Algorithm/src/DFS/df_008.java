@@ -3,6 +3,7 @@ package DFS;
 public class df_008 {
 
 	public static void main(String[] args) { //목적지 도달 시 경로의 합이 특정 값이 되는 모든 경우의 수
+											 //(오른쪽 아래로만 이동가능)
 		int[][] maps = {
 			    {1, 2, 3},
 			    {4, 5, 6},
