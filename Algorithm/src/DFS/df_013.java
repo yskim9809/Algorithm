@@ -6,7 +6,7 @@ public class df_013 {
 
 	static int count = 0;
 
-	public static void main(String[] args) { // S가 해킹됐을때 영향을 받는 서버 수(본인 포함)
+	public static void main(String[] args) { // S가 해킹됐을때 영향을 받는 서버 수(본인 포함), 양방향
 		int N = 7;
 		int[][] connections = { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 4, 5 } };
 		int S = 1;
