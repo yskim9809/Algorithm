@@ -12,6 +12,11 @@ public class bf_004 {
 		int n = grid.length;
 		int m = grid[0].length;
 		boolean[][] visited = new boolean[n][m];
+		
+		int[] dx = {1,-1,0,0};
+		int[] dy = {0,0,-1,1};
+		
+		 
 
 	}
 
