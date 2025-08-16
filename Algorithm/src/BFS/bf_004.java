@@ -34,7 +34,7 @@ public class bf_004 {
 		que.add(new int[] { 0, 0, 0 }); // x,y,거리
 		visited[0][0] = true;
 
-		// BFD
+		// BFS
 		while (!que.isEmpty()) {
 			int[] temp = que.poll();
 			int x = temp[0];
