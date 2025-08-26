@@ -7,11 +7,8 @@ public class bf_004 {
 
 	public static void main(String[] args) {
 		int[][] grid = { // (n-1,m-1) 로 가는 최단 이동 칸 수. 0으로만 이동 상하좌우가능
-	            {0, 0, 0},
-	            {1, 1, 0},
-	            {0, 0, 0}
-	        };
-		
+				{ 0, 0, 0 }, { 1, 1, 0 }, { 0, 0, 0 } };
+
 		int n = grid.length;
 		int m = grid[0].length;
 		boolean[][] visited = new boolean[n][m];
@@ -29,7 +26,7 @@ public class bf_004 {
 			System.out.println(-1);
 			return;
 		}
-		
+
 		// 시작 세팅
 		que.add(new int[] { 0, 0, 0 }); // x,y,거리
 		visited[0][0] = true;
@@ -40,6 +37,12 @@ public class bf_004 {
 			int x = temp[0];
 			int y = temp[1];
 			int d = temp[2];
+
+			// 도착이면 즉시 종료
+			if (x == n - 1 && y == m - 1) {
+				System.out.println(d);
+				return;
+			}
 
 			for (int di = 0; di < 4; di++) {
 				int nx = x + dx[di];
@@ -53,17 +56,11 @@ public class bf_004 {
 				if (visited[nx][ny])
 					continue;
 
-				// 도착이면 즉시 종료
-				if (x == n - 1 && y == m - 1) {
-					System.out.println(d);
-					return;
-				}
-
 				visited[nx][ny] = true;
 				que.add(new int[] { nx, ny, d + 1 });
 			}
 		}
-		
+
 		System.out.println(-1);
 
 	}
