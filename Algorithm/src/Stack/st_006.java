@@ -15,6 +15,11 @@ public class st_006 {
 		int[] arrive = {3, 1, 4, 2};     // 도착 순서
         int[] out    = {1, 2, 3, 4};     // 출고 순서
         System.out.println(minZones(arrive, out)); // 2
+        
+     // 예시 설명:
+        // pos: {1->0, 2->1, 3->2, 4->3}
+        // seq (arrive를 out 인덱스로 치환): [2,0,3,1]
+        // LIS 길이: 2 → 최소 구역 2
 
 	}
 	 public static int minZones(int[] arrive, int[] out) {
